@@ -4,7 +4,7 @@ def get_questions():
 	questions = []
 	
 	#opening and reading from a file
-	with open("C:/Python34/Workspace/Quiz game/quiz.csv",mode="r",encoding="utf-8") as my_file:
+	with open("quiz.csv",mode="r",encoding="utf-8") as my_file:
 		quiz = csv.reader(my_file)
 		for question in quiz:
 			questions.append(question)
